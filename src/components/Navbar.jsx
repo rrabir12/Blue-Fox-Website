@@ -22,12 +22,7 @@ function Navbar() {
       additionalLinks: [
         { title: 'Our Blogs', link: '/' },
         { title: 'Clients', link: '/' },
-<<<<<<< HEAD
-        { title: 'Partners', link: '/' },
-        { title: 'Awards & Membership', link: '/' }
-=======
         { title: 'Partners', link: '/' }
->>>>>>> origin/main
       ],
       resourceLinks: [
         { title: 'Case Studies', link: '/' },
@@ -62,33 +57,11 @@ function Navbar() {
             'Enterprise Portals',
             'Dedicated Development Team'
           ]
-<<<<<<< HEAD
-        },
-        {
-          items: [
-            'UI/UX Design',
-            'Database Consulting',
-            'Open Source CMS & E-commerce',
-            'QA and Testing',
-            'Maintenance and Support'
-          ]
-=======
->>>>>>> origin/main
         }
       ]
     },
     industry: {
       title: 'Industry',
-<<<<<<< HEAD
-      items: [
-        'Education & Learning',
-        'Food & Hospitality',
-        'Health & Fitness',
-        'Finance & Marketing',
-        'Real Estate',
-        'Retail & Ecommerce',
-        'Startups'
-=======
       columns: [
         {
           items: ['Education & Learning', 'Food & Hospitality', 'Health & Fitness']
@@ -101,7 +74,6 @@ function Navbar() {
             'Startups'
           ]
         }
->>>>>>> origin/main
       ]
     },
     technology: {
@@ -109,13 +81,6 @@ function Navbar() {
       sections: [
         {
           title: 'Frontend',
-<<<<<<< HEAD
-          items: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap', 'ReactJS', 'Angular']
-        },
-        {
-          title: 'Backend',
-          items: ['PHP', 'Node.JS', 'Python', 'Laravel', 'Mern Stack', 'Mean Stack', 'Next.js']
-=======
           items: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap', 'React JS', 'Angular']
         },
         {
@@ -125,24 +90,10 @@ function Navbar() {
         {
           title: 'Mobile',
           items: ['Android', 'iOS', 'Flutter', 'React Native', 'Wearable']
->>>>>>> origin/main
         },
         {
           title: 'Database',
           items: ['SQL Server', 'MySQL', 'PostgreSQL', 'MongoDB', 'Oracle']
-<<<<<<< HEAD
-        }
-      ]
-    },
-    work: {
-      title: 'Work',
-      items: ['Portfolio']
-    },
-    solution: {
-      title: 'Solution',
-      items: ['Enterprise Solutions']
-    }
-=======
         },
         {
           title: 'Emerging Technologies',
@@ -181,7 +132,6 @@ function Navbar() {
     }
 
    
->>>>>>> origin/main
   };
 
   return (
@@ -198,28 +148,14 @@ function Navbar() {
             </button>
           </div>
 
-<<<<<<< HEAD
-          <div className={`hidden lg:flex space-x-6`}>
-            {Object.entries(menuItems).map(([key, menu]) => (
-              <div 
-=======
           <div className="hidden lg:flex space-x-6">
             {Object.entries(menuItems).map(([key, menu]) => (
               <div
->>>>>>> origin/main
                 key={key}
                 className="relative nav-item group"
                 onMouseEnter={() => setActiveMenu(key)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
-<<<<<<< HEAD
-                <button className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">
-                  {menu.title}
-                </button>
-                
-                <div className="mega-menu">
-                  <div className="bg-white shadow-xl w-screen">
-=======
                 <button className="px1 py-2 text-black-700 hover:text-blue-600 font-bold flex items-center">
                   {menu.title}
                   <svg
@@ -241,7 +177,6 @@ function Navbar() {
                 {/* Submenu (Mega Menu) */}
                 {activeMenu === key && (
                   <div className="absolute left-0 right-0 top-full bg-white shadow-xl w-screen z-10">
->>>>>>> origin/main
                     <div className="max-w-7xl mx-auto px-4 py-8">
                       {key === 'company' && (
                         <div className="grid grid-cols-4 gap-6">
@@ -257,13 +192,8 @@ function Navbar() {
                             <ul className="space-y-3">
                               {menu.items.map((item, idx) => (
                                 <li key={idx}>
-<<<<<<< HEAD
-                                  <Link 
-                                    to={item.link} 
-=======
                                   <Link
                                     to={item.link}
->>>>>>> origin/main
                                     className="block text-gray-700 hover:text-blue-600"
                                   >
                                     {item.title}
@@ -276,13 +206,8 @@ function Navbar() {
                             <ul className="space-y-3 mt-16">
                               {menu.additionalLinks.map((item, idx) => (
                                 <li key={idx}>
-<<<<<<< HEAD
-                                  <Link 
-                                    to={item.link} 
-=======
                                   <Link
                                     to={item.link}
->>>>>>> origin/main
                                     className="block text-gray-700 hover:text-blue-600"
                                   >
                                     {item.title}
@@ -295,13 +220,8 @@ function Navbar() {
                             <ul className="space-y-3 mt-16">
                               {menu.resourceLinks.map((item, idx) => (
                                 <li key={idx}>
-<<<<<<< HEAD
-                                  <Link 
-                                    to={item.link} 
-=======
                                   <Link
                                     to={item.link}
->>>>>>> origin/main
                                     className="block text-gray-700 hover:text-blue-600"
                                   >
                                     {item.title}
@@ -311,13 +231,8 @@ function Navbar() {
                             </ul>
                             <div className="flex space-x-2 mt-6">
                               {menu.socialLinks.map((social, idx) => (
-<<<<<<< HEAD
-                                <a 
-                                  key={idx} 
-=======
                                 <a
                                   key={idx}
->>>>>>> origin/main
                                   href={social.link}
                                   className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700"
                                   aria-label={social.platform}
@@ -329,15 +244,6 @@ function Navbar() {
                           </div>
                           <div className="col-span-1 flex items-center justify-center">
                             <div className="w-full">
-<<<<<<< HEAD
-                              <img 
-                                src="https://via.placeholder.com/400x200" 
-                                alt="Two women looking at computer" 
-                                className="rounded-lg w-full object-cover h-48"
-                              />
-                              <Link 
-                                to="/" 
-=======
                               <img
                                 src="https://via.placeholder.com/400x200"
                                 alt="Two women looking at computer"
@@ -345,7 +251,6 @@ function Navbar() {
                               />
                               <Link
                                 to="/"
->>>>>>> origin/main
                                 className="flex items-center justify-center text-blue-600 hover:text-blue-700 mt-4 border border-blue-600 rounded-md py-2 px-4"
                               >
                                 <span>Check brochure</span>
@@ -355,11 +260,6 @@ function Navbar() {
                           </div>
                         </div>
                       )}
-<<<<<<< HEAD
-                      
-=======
-
->>>>>>> origin/main
                       {key === 'service' && (
                         <div className="grid grid-cols-3 gap-8">
                           {menu.columns.map((column, idx) => (
@@ -373,13 +273,8 @@ function Navbar() {
                               <ul className="space-y-3">
                                 {column.items.map((item, itemIdx) => (
                                   <li key={itemIdx}>
-<<<<<<< HEAD
-                                    <Link 
-                                      to="/" 
-=======
                                     <Link
                                       to="/"
->>>>>>> origin/main
                                       className="flex items-center text-gray-700 hover:text-blue-600"
                                     >
                                       <span className="mr-2">→</span>
@@ -392,35 +287,6 @@ function Navbar() {
                           ))}
                         </div>
                       )}
-<<<<<<< HEAD
-                      
-                      {key === 'technology' && (
-                        <div className="grid grid-cols-3 gap-8">
-                          {menu.sections.map((section, idx) => (
-                            <div key={idx}>
-                              <h3 className="text-lg font-semibold text-gray-800 mb-4">{section.title}</h3>
-                              <ul className="grid grid-cols-2 gap-y-2">
-                                {section.items.map((item, itemIdx) => (
-                                  <li key={itemIdx}>
-                                    <Link 
-                                      to="/" 
-                                      className="text-gray-700 hover:text-blue-600"
-                                    >
-                                      {item}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-=======
 
                       {key === 'industry' && (
                         <div className="flex">
@@ -563,7 +429,6 @@ function Navbar() {
             <Link to="/" className="px1 py-2 text-black-700 hover:text-blue-600 font-bold">
               Solution
             </Link>
->>>>>>> origin/main
           </div>
 
           <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center hidden lg:flex">
@@ -575,20 +440,13 @@ function Navbar() {
         </div>
       </div>
 
-<<<<<<< HEAD
-=======
       {/* Mobile Menu */}
->>>>>>> origin/main
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-2 p-4">
             {Object.entries(menuItems).map(([key, menu]) => (
               <div key={key}>
-<<<<<<< HEAD
-                <button 
-=======
                 <button
->>>>>>> origin/main
                   className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
                   onClick={() => setActiveMenu(activeMenu === key ? null : key)}
                 >
@@ -596,13 +454,6 @@ function Navbar() {
                 </button>
                 {activeMenu === key && (
                   <div className="pl-4">
-<<<<<<< HEAD
-                    {menu.items.map((item, idx) => (
-                      <Link key={idx} to={item.link} className="block text-gray-600 hover:text-blue-600">
-                        {item.title}
-                      </Link>
-                    ))}
-=======
                     {(menu.items || []).map((item, idx) => (
                       <Link key={idx} to={item.link || '/'} className="block text-gray-600 hover:text-blue-600">
                         {item.title || item}
@@ -627,13 +478,10 @@ function Navbar() {
                         ))}
                       </div>
                     ))}
->>>>>>> origin/main
                   </div>
                 )}
               </div>
             ))}
-<<<<<<< HEAD
-=======
             {/* Solution as a simple link in mobile menu */}
             <Link to="/" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">
               Work
@@ -643,7 +491,6 @@ function Navbar() {
             <Link to="/" className="px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">
               Solution
             </Link>
->>>>>>> origin/main
           </div>
         </div>
       )}
