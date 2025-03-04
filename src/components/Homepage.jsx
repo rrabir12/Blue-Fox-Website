@@ -852,7 +852,6 @@ function Homepage() {
                     <option value="artificial-intelligence">Artificial Intelligence</option>
                     <option value="it-consulting">IT Consulting</option>
                     <option value="iot-solutions">Software Solutions for Internet of Things</option>
-                    <option value="blockchain">Blockchain</option>
                     <option value="machine-learning">Machine Learning</option>
                     <option value="cloud-computing">Cloud Computing</option>
                     <option value="ux-ui-design">UX / UI Design</option>
