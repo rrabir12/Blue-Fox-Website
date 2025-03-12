@@ -12,7 +12,7 @@ function Navbar() {
       title: 'Company',
       icon: '🏢',
       items: [
-        { title: 'About Us', link: '/' },
+        { title: 'About Us', link: 'about' },
         { title: 'Engagement Model', link: '/' },
         { title: 'Our Development Process', link: '/' },
         { title: 'Testimonials', link: '/' },
