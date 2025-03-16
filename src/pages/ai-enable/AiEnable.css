@@ -1,0 +1,58 @@
+@keyframes travel {
+    0% {
+      top: 0;  /* Start at the top */
+    }
+    100% {
+      top: 100%;  /* Move to the bottom of the parent div */
+    }
+}
+  
+.animate-travel {
+    animation: travel 5s infinite linear;
+}
+
+.delay-0 {
+    animation-delay: 0s;
+  }
+  
+.delay-1000 {
+    animation-delay: 1s;  /* Delay the second box by 1 second */
+}
+
+.line{
+  width: 120px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #1796D2;
+  position: relative;
+}
+
+.lineCircle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #1796D2;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes travelLeftRight {
+  0% {
+    left: 0;  /* Start at the top */
+  }
+  100% {
+    left: 100%;  /* Move to the bottom of the parent div */
+  }
+}
+
+.animate-travelLeftRight {
+  animation: travelLeftRight 2s infinite linear;
+}
+
+.smallLine{
+  width: 100px;
+  height: 3px;
+  background: #1796D2;
+  border-radius: 5px;
+}

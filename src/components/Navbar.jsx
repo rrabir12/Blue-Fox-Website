@@ -41,21 +41,21 @@ function Navbar() {
       columns: [
         {
           items: [
-            'AI Enabled Application',
-            'ERP Consulting and Development',
-            'Web Development',
-            'Microsoft Technologies',
-            'Devops Consulting',
-            'Frontend Development'
+            { title: 'AI Enabled Application', link: '/ai_enable' },
+            { title: 'ERP Consulting and Development', link: '/' },
+            { title: 'Web Development', link: '/' },
+            { title: 'Microsoft Technologies', link: '/' },
+            { title: 'DevOps Consulting', link: '/' },
+            { title: 'Frontend Development', link: '/' }
           ]
         },
         {
           items: [
-            'Generative AI Development',
-            'Data Visualization',
-            'Mobile Development',
-            'Enterprise Portals',
-            'Dedicated Development Team'
+            { title: 'Generative AI Development', link: '/' },
+            { title: 'Data Visualization', link: '/' },
+            { title: 'Mobile Development', link: '/' },
+            { title: 'Enterprise Portals', link: '/' },
+            { title: 'Dedicated Development Team', link: '/' }
           ]
         }
       ]
@@ -274,11 +274,11 @@ function Navbar() {
                                 {column.items.map((item, itemIdx) => (
                                   <li key={itemIdx}>
                                     <Link
-                                      to="/"
+                                      to={item.link}
                                       className="flex items-center text-gray-700 hover:text-blue-600"
                                     >
                                       <span className="mr-2">→</span>
-                                      {item}
+                                      {item.title}
                                     </Link>
                                   </li>
                                 ))}
