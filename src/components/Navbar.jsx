@@ -13,7 +13,7 @@ function Navbar() {
       icon: '🏢',
       items: [
         { title: 'About Us', link: 'about' },
-        { title: 'Engagement Model', link: '/' },
+        { title: 'Engagement Model', link: '/engagement-model' },
         { title: 'Our Development Process', link: '/' },
         { title: 'Testimonials', link: '/' },
         { title: 'Careers', link: '/' },
